@@ -52,7 +52,7 @@ python src/edge_detection.py
 python src/deployment.py
 ```
 
-## 📊 Datasets and Metrics:
+### Datasets and Metrics:
 Please refer to SUMMARY_REPORT.md for information on datasets used and performance metrics.
 
 ### FastAPI Deployment Pipeline
