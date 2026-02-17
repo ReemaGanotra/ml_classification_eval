@@ -55,7 +55,7 @@ python src/deployment.py
 ### Datasets and Metrics:
 Please refer to SUMMARY_REPORT.md for information on datasets used and performance metrics.
 
-### FastAPI Deployment Pipeline
+## FastAPI Deployment Pipeline
 
 ### 5-Stage MLOps Pipeline
 
@@ -114,7 +114,7 @@ curl -X POST http://localhost:8000/predict \
 }
 ```
 
-### Drift monitoring
+## Drift monitoring
 
 ```bash
 # After making some predictions
@@ -140,12 +140,17 @@ All sklearn estimators receive `random_state=SEED`.
 
 
 
-### Optimization
+## Optimization
 
 **ONNX Export:**
 ```python
-# PyTorch → ONNX
-torch.onnx.export(model, dummy_input, "edge_cnn.onnx", opset_version=13)
+# Tensorflow → ONNX
+tf2onnx.convert.from_keras(
+                edge_cnn,
+                input_signature=spec,
+                opset=13,
+                output_path=str(onnx_path)
+            )
 
 ```
 
