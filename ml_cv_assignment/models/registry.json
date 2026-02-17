@@ -1,0 +1,19 @@
+{
+  "models": [
+    {
+      "name": "adult_income",
+      "version": "1.0.0",
+      "path": "C:\\Users\\dganotra\\PycharmProjects\\ml_classification_eval\\ml_cv_assignment\\models\\best_model.pkl",
+      "metrics": {
+        "model": "Random Forest",
+        "precision": 0.5969387755102041,
+        "recall": 0.8349687778768956,
+        "f1_score": 0.6961695797694311,
+        "roc_auc": 0.9125589106868028,
+        "test_accuracy": 0.81934770591487
+      },
+      "status": "production",
+      "registered_at": "2026-02-17T18:34:32.117570"
+    }
+  ]
+}
