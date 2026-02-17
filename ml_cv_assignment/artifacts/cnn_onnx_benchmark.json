@@ -1,0 +1,5 @@
+{
+  "tensorflow_latency_ms": 87.0322322845459,
+  "onnx_latency_ms": 37.242889404296875,
+  "speedup": 2.3368818498412374
+}
