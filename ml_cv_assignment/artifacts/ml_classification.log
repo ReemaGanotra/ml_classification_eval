@@ -1,0 +1,68 @@
+2026-02-17 18:05:04,978 - root - INFO - ============================================================
+2026-02-17 18:05:04,978 - root - INFO - TASK 1  –  ADULT INCOME CLASSIFICATION
+2026-02-17 18:05:04,978 - root - INFO - ============================================================
+2026-02-17 18:05:05,085 - root - INFO - Dropped 2155 rows with missing values (1.0 %)
+2026-02-17 18:05:05,087 - root - INFO - Dataset ready  –  shape: (45222, 16)
+2026-02-17 18:05:05,088 - root - INFO - Class balance  –  >50K: 24.8 %
+2026-02-17 18:05:05,088 - root - INFO - Running EDA …
+2026-02-17 18:05:05,102 - root - INFO - 
+                age        fnlwgt  education_num  capital_gain  capital_loss  hours_per_week  income_binary
+count  45222.000000  4.522200e+04   45222.000000  45222.000000  45222.000000    45222.000000   45222.000000
+mean      38.547941  1.897347e+05      10.118460   1101.430344     88.595418       40.938017       0.247844
+std       13.217870  1.056392e+05       2.552881   7506.430084    404.956092       12.007508       0.431766
+min       17.000000  1.349200e+04       1.000000      0.000000      0.000000        1.000000       0.000000
+25%       28.000000  1.173882e+05       9.000000      0.000000      0.000000       40.000000       0.000000
+50%       37.000000  1.783160e+05      10.000000      0.000000      0.000000       40.000000       0.000000
+75%       47.000000  2.379260e+05      13.000000      0.000000      0.000000       45.000000       0.000000
+max       90.000000  1.490400e+06      16.000000  99999.000000   4356.000000       99.000000       1.000000
+2026-02-17 18:05:05,103 - root - INFO - Missing values: 0  (dropped during load)
+2026-02-17 18:05:05,103 - root - INFO - Class counts  –  <=50K: 34014 | >50K: 11208
+2026-02-17 18:05:05,344 - root - INFO - Plot saved to C:\Users\dganotra\PycharmProjects\ml_classification_eval\ml_cv_assignment\artifacts\correlation_heatmap.png
+2026-02-17 18:05:06,296 - root - INFO - Plot saved to C:\Users\dganotra\PycharmProjects\ml_classification_eval\ml_cv_assignment\artifacts\feature_distributions.png
+2026-02-17 18:05:06,394 - root - INFO - Plot saved to C:\Users\dganotra\PycharmProjects\ml_classification_eval\ml_cv_assignment\artifacts\class_balance.png
+2026-02-17 18:05:06,706 - root - INFO - Plot saved to C:\Users\dganotra\PycharmProjects\ml_classification_eval\ml_cv_assignment\artifacts\income_by_education.png
+2026-02-17 18:05:06,706 - root - INFO - EDA complete – 4 plots saved to artifacts/
+2026-02-17 18:05:06,764 - root - INFO - Feature matrix: 45222 samples × 15 features
+2026-02-17 18:05:06,764 - root - INFO - Engineered: capital_net | hours_per_week_norm | age_edu_interaction | is_married
+2026-02-17 18:05:06,773 - root - INFO - Split  –  Train: (36177, 15)  |  Test: (9045, 15)
+2026-02-17 18:05:06,801 - root - INFO - Training: Logistic Regression
+2026-02-17 18:05:06,999 - root - INFO -   5-fold CV F1 : 0.6667  (±0.0039)
+2026-02-17 18:05:07,048 - root - INFO -   Precision=0.5511  Recall=0.8225  F1=0.6600  AUC=0.8840  Time=0.0s
+2026-02-17 18:05:07,049 - root - INFO - Training: Random Forest
+2026-02-17 18:05:09,386 - root - INFO -   5-fold CV F1 : 0.6953  (±0.0045)
+2026-02-17 18:05:09,983 - root - INFO -   Precision=0.5969  Recall=0.8350  F1=0.6962  AUC=0.9126  Time=0.5s
+2026-02-17 18:05:09,984 - root - INFO - Training: Support Vector Machine
+2026-02-17 18:10:48,969 - root - INFO - ============================================================
+2026-02-17 18:10:48,969 - root - INFO - TASK 1  –  ADULT INCOME CLASSIFICATION
+2026-02-17 18:10:48,969 - root - INFO - ============================================================
+2026-02-17 18:10:49,069 - root - INFO - Dropped 2155 rows with missing values (1.0 %)
+2026-02-17 18:10:49,071 - root - INFO - Dataset ready  –  shape: (45222, 16)
+2026-02-17 18:10:49,071 - root - INFO - Class balance  –  >50K: 24.8 %
+2026-02-17 18:10:49,072 - root - INFO - Running EDA …
+2026-02-17 18:10:49,086 - root - INFO - 
+                age        fnlwgt  education_num  capital_gain  capital_loss  hours_per_week  income_binary
+count  45222.000000  4.522200e+04   45222.000000  45222.000000  45222.000000    45222.000000   45222.000000
+mean      38.547941  1.897347e+05      10.118460   1101.430344     88.595418       40.938017       0.247844
+std       13.217870  1.056392e+05       2.552881   7506.430084    404.956092       12.007508       0.431766
+min       17.000000  1.349200e+04       1.000000      0.000000      0.000000        1.000000       0.000000
+25%       28.000000  1.173882e+05       9.000000      0.000000      0.000000       40.000000       0.000000
+50%       37.000000  1.783160e+05      10.000000      0.000000      0.000000       40.000000       0.000000
+75%       47.000000  2.379260e+05      13.000000      0.000000      0.000000       45.000000       0.000000
+max       90.000000  1.490400e+06      16.000000  99999.000000   4356.000000       99.000000       1.000000
+2026-02-17 18:10:49,086 - root - INFO - Missing values: 0  (dropped during load)
+2026-02-17 18:10:49,086 - root - INFO - Class counts  –  <=50K: 34014 | >50K: 11208
+2026-02-17 18:10:49,318 - root - INFO - Plot saved to C:\Users\dganotra\PycharmProjects\ml_classification_eval\ml_cv_assignment\artifacts\correlation_heatmap.png
+2026-02-17 18:10:50,265 - root - INFO - Plot saved to C:\Users\dganotra\PycharmProjects\ml_classification_eval\ml_cv_assignment\artifacts\feature_distributions.png
+2026-02-17 18:10:50,360 - root - INFO - Plot saved to C:\Users\dganotra\PycharmProjects\ml_classification_eval\ml_cv_assignment\artifacts\class_balance.png
+2026-02-17 18:10:50,668 - root - INFO - Plot saved to C:\Users\dganotra\PycharmProjects\ml_classification_eval\ml_cv_assignment\artifacts\income_by_education.png
+2026-02-17 18:10:50,669 - root - INFO - EDA complete – 4 plots saved to artifacts/
+2026-02-17 18:10:50,719 - root - INFO - Feature matrix: 45222 samples × 15 features
+2026-02-17 18:10:50,719 - root - INFO - Engineered: capital_net | hours_per_week_norm | age_edu_interaction | is_married
+2026-02-17 18:10:50,728 - root - INFO - Split  –  Train: (36177, 15)  |  Test: (9045, 15)
+2026-02-17 18:10:50,729 - root - INFO - Training: Logistic Regression
+2026-02-17 18:10:50,919 - root - INFO -   5-fold CV F1 : 0.6667  (±0.0039)
+2026-02-17 18:10:50,965 - root - INFO -   Precision=0.5511  Recall=0.8225  F1=0.6600  AUC=0.8840  Time=0.0s
+2026-02-17 18:10:50,966 - root - INFO - Training: Random Forest
+2026-02-17 18:10:53,178 - root - INFO -   5-fold CV F1 : 0.6953  (±0.0045)
+2026-02-17 18:10:53,713 - root - INFO -   Precision=0.5969  Recall=0.8350  F1=0.6962  AUC=0.9126  Time=0.5s
+2026-02-17 18:10:53,714 - root - INFO - Training: Support Vector Machine

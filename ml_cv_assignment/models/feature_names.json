@@ -1,0 +1,17 @@
+[
+  "age",
+  "workclass",
+  "education",
+  "education_num",
+  "marital_status",
+  "occupation",
+  "relationship",
+  "race",
+  "sex",
+  "hours_per_week",
+  "native_country",
+  "capital_net",
+  "hours_per_week_norm",
+  "age_edu_interaction",
+  "is_married"
+]

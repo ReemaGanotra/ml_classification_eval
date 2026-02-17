@@ -52,16 +52,32 @@ def setup_logging(log_file: Optional[str] = None, level=logging.INFO):
         log_file: Optional log file path
         level: Logging level
     """
+    # handlers = [logging.StreamHandler()]
+    #
+    # if log_file:
+    #     log_path = ARTIFACTS_DIR / log_file
+    #     handlers.append(logging.FileHandler(log_path))
+    #
+    # logging.basicConfig(
+    #     level=level,
+    #     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    #     handlers=handlers
+    # )
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+        handler.close()
+
     handlers = [logging.StreamHandler()]
-    
+
     if log_file:
         log_path = ARTIFACTS_DIR / log_file
         handlers.append(logging.FileHandler(log_path))
-    
+
     logging.basicConfig(
         level=level,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        handlers=handlers
+        handlers=handlers,
+        force=True,  # Python 3.8+: re-configure even if handlers exist
     )
 
 
