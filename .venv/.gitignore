@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data (large files)
+#data/
+#*.csv
+#*.jpg
+#*.png
+#*.jpeg
+#*.npy
+#*.npz
+
+# Models (large files)
+#models/*.pkl
+#models/*.pth
+#models/*.onnx
+#models/*.h5
+
+# Logs
+#*.log
+#logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Artifacts (optional - keep if want to share results)
+# artifacts/
+
+# Environment variables
+.env
+.env.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
