@@ -164,7 +164,7 @@ tf2onnx.convert.from_keras(
 **Optimization Explained: Quantization**
 - Technique: Convert FP32 weights → INT8, 2-3x inference speedup
 - Trade-off: <2% accuracy loss (acceptable for most applications)
-- Implementation: `torch.quantization.quantize_dynamic()`
+- Implementation: `tf.lite.TFLiteConverter`
 
 ### Task 5: Drift Monitoring Plan
 
@@ -189,7 +189,7 @@ All experiments use fixed random seeds:
 SEED = 42
 random.seed(SEED)
 np.random.seed(SEED)
-torch.manual_seed(SEED)
+tf.random.set_seed(SEED)
 ```
 
 
